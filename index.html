@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 6th Anniversary</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+        
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #121212 url('https://source.unsplash.com/1600x900/?stars,night') fixed;
+            color: #ff6699;
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #ff6699;
+            font-family: 'Dancing Script', cursive;
+        }
+
+        header p {
+            font-size: 1.4em;
+            color: #fff;
+        }
+
+        /* Navigation Bar */
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ff6699;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff3366;
+        }
+
+        /* Heart Animation */
+        .heart-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: #ff6699;
+            position: relative;
+            transform: rotate(-45deg);
+            animation: pulse 2s infinite;
+        }
+
+        .heart::before, .heart::after {
+            content: '';
+            width: 100px;
+            height: 100px;
+            background-color: #ff6699;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -50px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 50px;
+            top: 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1) rotate(-45deg);
+            }
+            50% {
+                transform: scale(1.2) rotate(-45deg);
+            }
+        }
+
+        /* Messages Section */
+        .message-section {
+            text-align: center;
+            margin: 50px auto;
+            font-size: 1.2em;
+            width: 70%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1.5s ease, transform 1.5s ease;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            padding: 30px;
+            color: #fff;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        .message-section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+        }
+
+        /* Buttons */
+        .play-game, .scroll-btn {
+            display: inline-block;
+            margin: 20px auto;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #ff6699;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .play-game:hover, .scroll-btn:hover {
+            background-color: #ff3366;
+            transform: scale(1.1);
+        }
+
+        .scroll-btn {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Happy 6th Anniversary!</h1>
+        <p>To my darling, my sunflower, my yellow, my Maham</p>
+    </header>
+
+    <!-- Heart Animation -->
+    <div class="heart-container">
+        <div class="heart"></div>
+    </div>
+
+    <!-- Message Sections -->
+    <section id="messages">
+        <div class="message-section" id="message-1">Hey Mano, from the moment you entered my life, everything changed for the better. You have become my anchor, my joy, my biggest supporter, my kuchupuchu, and my safe place. You make me feel seen, loved, and understood in ways no one else ever has.</div>
+        <div class="message-section" id="message-2">I know I’ve made mistakes, terrible, horrible, unforgiveable mistakes, and for that, I am truly sorry. I’m doing everything in my power and will always continue to do so to make things right because you deserve nothing but the best version of me. You are the one that created this soft, cute, cringe Asfand, and you deserve only this, not the version the world sees of me, it isnt bad but it isnt for you and never will be.</div>
+        <div class="message-section" id="message-3">These past 6 years with you have been the most magical moments of my life. From those daily good morning messages(which I miss the most), to texting each other as soon as we got back home and spamming posts, talking to each other during Amanullah's class, to you and your friends writing on my diary durig the namaz break. I miss it all Maham, more than you can imagine, and I want all those moments back. All that chemistry between us back. All that ehm tension bw us back. I promise you I will fix everything, your love from the first day has shown me the kind of happiness I never imagined existed.</div>
+        <div class="message-section" id="message-4">Mano, your presence lights up my life like a thousand stars. All I want is the queen of these stars to be with me and to wake up next to me with those puffy cheeks, that grumpy face, messy hair, and for me to just hold u tight fix your hair and tell you how much I love you, and how I will always be here for you during your darkest times, when you hate everyone (including me), dont want to talk to anyone, want to cry your eyes out, I will always be the same 17 year old Asfi that you fell for, and I always will. </div>
+        <div class="message-section" id="message-5">Lets fix everything and build a life full of dreams, adventures, and love where we have no worry and the biggest fight bw us is why I didn't start wishing and showering you in gifts an hour before your birthday. Thank you for everything you have done for us and this dumb idiot that ik you hate.</div>
+        <div class="message-section" id="message-6">I Love You, and always will, no one can remove this part of me where I crave you every second.</div>
+    </section>
+
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-btn" onclick="scrollToTop()">Back to Top</button>
+
+    <!-- Play Game Button -->
+    <button class="play-game" onclick="window.location.href='game.html'">Click for fireworks</button>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Apka Asfi</p>
+    </footer>
+
+    <script>
+         window.onload = () => {
+        window.scrollTo(0, 0);
+    };
+        // Fade-in animation for message sections
+        const sections = document.querySelectorAll('.message-section');
+
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight;
+            sections.forEach(section => {
+                if (section.offsetTop < scrollPosition - 50) {
+                    section.classList.add('visible');
+                }
+            });
+        });
+
+        // Smooth Scroll to Top
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
