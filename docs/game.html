@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Six Years!</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #ff66cc;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+            position: relative;
+            height: 100vh; /* Full screen height */
+            overflow: hidden;
+        }
 
+        .fireworks {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif') no-repeat center center;
+            background-size: cover;
+            opacity: 0;
+            transition: opacity 3s ease-in-out;
+        }
+
+        #happyText {
+            font-size: 3em;
+            color: #ff66cc;
+            font-weight: bold;
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+            position: absolute;
+            top: 50%; /* Position at the center of the screen */
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center it */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="fireworks" id="fireworks"></div>
+    <div id="happyText">Happy Sex I mean Six Years!<br>
+        Never knew I would love the same person for so long and still be falling in love with that same person every single day
+    </div>
+
+    <script>
+        // Show fireworks animation
+        function showFireworks() {
+            const fireworks = document.getElementById('fireworks');
+            fireworks.style.opacity = 1; // Fade in fireworks
+        }
+
+        // Show the "Happy Six Years!" text after the fireworks
+        function showText() {
+            const happyText = document.getElementById('happyText');
+            happyText.style.opacity = 1; // Fade in the text
+        }
+
+        // Trigger fireworks and text after a slight delay
+        setTimeout(() => {
+            showFireworks();
+            setTimeout(showText, 3000); // Show text after 3 seconds (fireworks duration)
+        }, 1000); // Wait 1 second before starting fireworks
+
+    </script>
+
+</body>
+</html>
